@@ -1,4 +1,7 @@
 #!/bin/bash
 
 export PROJECT_DIR=$(pwd)
-conda activate ./env
+# see ./env exists
+if [ -d "./env" ]; then
+    conda activate ./env
+fi
